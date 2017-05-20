@@ -1,0 +1,23 @@
+header {
+  width: 1440px;
+  height: 78px;
+  background-color: #ffffff;
+  border: solid 1px #ebebeb; }
+  header home {
+    width: 252px;
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 32.5px;
+    font-weight: 100;
+    text-align: left;
+    color: #313d4d; }
+    header home-second {
+      color: #88b04b; }
+  header nav {
+    width: 112px;
+    height: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    color: #313d4d; }
