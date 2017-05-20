@@ -8,13 +8,13 @@
         padding: 30px;
         font-size: 22px;
 
-        input, textarea, span {
+        input, textarea, & > span {
             font-size: 22px;
             width: 100%;
             max-width: 460px;
         }
 
-        span, p {
+        & > span, p {
             color: #666666;
             padding: 0px 0px 23px 27px;
             margin: 0 auto;
@@ -44,20 +44,38 @@
             }
         }
 
-        input[type="checkbox"]{
-            width: 20px;
-            height: 20px;
-            margin: 0px 8px 0px 0px;
-            display: block;
-            float: left;
-        }
-
         label {
             font-size: 16px;
             line-height: 20px;
             color: #666666;
             padding: 0px 0px 0px 5px;
             display: block;
+
+            input[type="checkbox"]{
+                display: none;
+            }
+
+            span {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                    border: solid 1px #88b04b;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+
+            
+
+            input[type="checkbox"]:checked + span {
+                &:before {
+                    background: url('img/accept.png') #88b04b no-repeat 50% 50%;
+                }
+            }
         }
 
         textarea {
