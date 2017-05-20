@@ -1,0 +1,38 @@
+.investment {
+
+  .title {
+    width: 424px;
+    height: 72px;
+    font-family: Lato;
+    font-size: 72px;
+    font-weight: 300;
+    text-align: center;
+    color: #323e4d;
+    padding-left: 513px;
+  }
+
+  .text {
+    width: 997px;
+    height: 85px;
+    font-family: Lato;
+    font-size: 22px;
+    line-height: 1.45;
+    text-align: center;
+    color: #666666;
+    padding-left: 221px;
+    margin-top: 84px;
+
+    &-development {
+      width: 997px;
+      height: 85px;
+      font-family: Lato;
+      font-size: 22px;
+      line-height: 1.45;
+      text-align: center;
+      color: #666666;
+      padding-left: 221px;
+    }
+  }
+
+
+}
