@@ -3,21 +3,21 @@ header {
   height: 78px;
   background-color: #ffffff;
   border: solid 1px #ebebeb; }
-  header home {
+  header .logo {
     width: 252px;
     height: 30px;
-    font-family: 'Lato', sans-serif;
+    font-family: Lato;
     font-size: 32.5px;
     font-weight: 100;
     text-align: left;
     color: #313d4d; }
-    header home-second {
+    header .logo--second {
       color: #88b04b; }
   header nav {
-    width: 112px;
-    height: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: Lato;
     font-size: 22px;
     font-weight: 300;
+    color: #313d4d;
+    float: right;
     text-align: center;
-    color: #313d4d; }
+    margin-right: 130px; }
