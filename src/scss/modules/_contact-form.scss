@@ -4,7 +4,7 @@
     form {
         width: 100%;
         max-width: 530px;
-        margin: 0 auto;
+        margin: 10px;
         padding: 30px;
         font-size: 22px;
 
@@ -14,11 +14,17 @@
             max-width: 460px;
         }
 
-        span {
+        span, p {
             color: #666666;
             padding: 0px 0px 23px 27px;
             margin: 0 auto;
             display: block;
+        }
+
+        p {
+            padding: 23px 0px;
+            text-align: center;
+            line-height: 1.45;
         }
 
     
@@ -80,6 +86,7 @@
                 max-width: 513px;
                 border: 2px solid #88b04b;
                 padding-top: 15px;
+                float: right;
 
                 h3 {
                     font-size: 80px;
