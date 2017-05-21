@@ -1,11 +1,20 @@
 @import 'variables';
 @import 'mixins';
+@import 'modules/section';
 @import 'modules/header';
 @import 'modules/investment';
 @import 'modules/footer';
+@import 'modules/contact-form';
 
+
+* {
+    font-family: 'Lato';
+    box-sizing: border-box;
+    outline: none;
+}
 
 body {
-  margin: 0;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }

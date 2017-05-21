@@ -1,0 +1,271 @@
+$breakpoint: 1100px;
+
+.contact__form {
+    width: 100%;
+
+    form {
+        width: 100%;
+        max-width: 530px;
+        margin: 10px;
+        padding: 30px;
+        font-size: 22px;
+
+        input, textarea, & > span {
+            font-size: 22px;
+            width: 100%;
+            max-width: 460px;
+        }
+
+        & > span, p {
+            color: #666666;
+            padding: 0px 0px 23px 27px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        p {
+            padding: 23px 0px;
+            text-align: center;
+            line-height: 1.45;
+        }
+
+    
+        input[type="text"], textarea{
+            height: 70px;
+            margin: 0 auto 23px auto;
+            padding: 0 26px;
+            display: block;
+            background-color: #f7f7f7;
+            border: solid 1px #d7d7d7;
+            border-radius: 3px;
+
+            &:focus {
+                background: #ffffff;
+                border: solid 1px #88b04b;
+                box-shadow: 0px 0px 6px #88b04b;
+            }
+        }
+
+        label {
+            font-size: 16px;
+            line-height: 20px;
+            color: #666666;
+            padding: 0px 0px 0px 5px;
+            display: block;
+
+            input[type="checkbox"], input[type="radio"]{
+                display: none;
+            }
+
+            span {
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                    border: solid 1px #88b04b;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+
+            
+
+            input[type="checkbox"]:checked + span, {
+                &:before {
+                    background: url('img/accept.png') #88b04b no-repeat 50% 50%;
+                }
+            }
+
+            input[type="radio"]:checked + span, {
+                &:before {
+                    background: #88b04b;
+                }
+            }
+        }
+
+        textarea {
+            height: 160px;
+            padding: 26px;
+        }
+
+        input[type="submit"]{
+            height: 70px;
+            margin: 23px auto;
+            color: #ffffff;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: 3px;
+            background-color: #88b04b;
+        }
+
+
+        @media only screen and (max-width: $breakpoint) {
+            max-width: none;
+
+            input, textarea, & > span {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    }
+
+    &_column {
+        width: 50%;
+        float: left;
+        clear: none;
+
+        &--green {
+            form {
+                max-width: 513px;
+                border: 2px solid #88b04b;
+                padding-top: 15px;
+                float: right;
+
+                h3 {
+                    font-size: 80px;
+                    color: #88b04b;
+                    background: #fff;
+                    font-weight: 300;
+                    padding: 0px 15px 15px 15px;
+                    margin: 0;
+                    position:relative;
+                    left: -105px;
+                }
+
+                label {
+                    font-size: 15px;
+                }
+            }
+
+            @media only screen and (max-width: $breakpoint) {
+                form {
+                    margin: 10px;
+                    width: auto;
+                    max-width: none;
+                    float: none;
+                    
+                    h3 {
+                        left: auto;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint) {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    &_dropdown {
+        border: solid 1px #88b04b;
+        margin-bottom: 23px;
+
+        a {
+            width: 100%;
+            line-height: 68px;
+            border-bottom: 0px;
+            display: block;
+            color: #88b04b;
+            cursor: pointer;
+
+            span {
+                font-size: 22px;
+                padding: 0px 28px;
+                height: 68px;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+
+            span + span {
+                border-left: 1px solid #88b04b;
+                background: url('img/dropdown-arrow.png') no-repeat 100% 50%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: block;
+                visibility: hidden;
+                opacity: 0;
+                width: 100%;
+                height: 0px;
+                padding: 0px 24px;
+                border-top: 0px solid #88b04b;
+                transition: visibility .1s ease-in, height .1s ease-in, opacity .1s ease-in;
+
+                &.selected {
+                    height: 67px;
+                    visibility: visible;
+                    opacity: 1;
+                    border-top-width: 1px;
+                }
+
+
+                &:first-child {
+                    border-top: 0;
+                }
+
+            
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: 20px 0;
+                    border: 0;
+                }
+
+                label {
+                    font-size: 22px;
+                    line-height: 67px;
+
+                    span:before {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+        &--disabled {
+            opacity: 0.5;
+        }
+
+
+        &--open {
+            a {
+                border-bottom: 1px solid #88b04b;
+
+                span + span {
+                    background-image: url('img/dropup-arrow.png');
+                }
+            }
+
+            ul {
+                li {
+                    border-top-width: 1px;
+                    height: 67px;
+                    visibility: visible;
+                    opacity: 1;
+
+                    &.disabled {
+                        height: 67px;
+                        visibility: visible;
+                        opacity: 0.5;
+                        border-top-width: 1px;
+                    }
+
+                    &.img {
+                        height: 225px;
+                    }
+                }
+            }
+        }
+    }
+}
+
