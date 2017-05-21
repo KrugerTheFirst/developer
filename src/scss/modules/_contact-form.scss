@@ -1,3 +1,5 @@
+$breakpoint: 1100px;
+
 .contact__form {
     width: 100%;
 
@@ -51,7 +53,7 @@
             padding: 0px 0px 0px 5px;
             display: block;
 
-            input[type="checkbox"]{
+            input[type="checkbox"], input[type="radio"]{
                 display: none;
             }
 
@@ -71,9 +73,15 @@
 
             
 
-            input[type="checkbox"]:checked + span {
+            input[type="checkbox"]:checked + span, {
                 &:before {
                     background: url('img/accept.png') #88b04b no-repeat 50% 50%;
+                }
+            }
+
+            input[type="radio"]:checked + span, {
+                &:before {
+                    background: #88b04b;
                 }
             }
         }
@@ -91,6 +99,16 @@
             border: 0;
             border-radius: 3px;
             background-color: #88b04b;
+        }
+
+
+        @media only screen and (max-width: $breakpoint) {
+            max-width: none;
+
+            input, textarea, & > span {
+                width: 100%;
+                max-width: none;
+            }
         }
     }
 
@@ -121,6 +139,24 @@
                     font-size: 15px;
                 }
             }
+
+            @media only screen and (max-width: $breakpoint) {
+                form {
+                    margin: 10px;
+                    width: auto;
+                    max-width: none;
+                    float: none;
+                    
+                    h3 {
+                        left: auto;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: $breakpoint) {
+            width: 100%;
+            float: none;
         }
     }
 
@@ -172,13 +208,16 @@
                     border-top-width: 1px;
                 }
 
+
                 &:first-child {
                     border-top: 0;
                 }
 
+            
                 img {
                     width: 100%;
                     height: auto;
+                    margin: 20px 0;
                     border: 0;
                 }
 
@@ -213,8 +252,20 @@
                     height: 67px;
                     visibility: visible;
                     opacity: 1;
+
+                    &.disabled {
+                        height: 67px;
+                        visibility: visible;
+                        opacity: 0.5;
+                        border-top-width: 1px;
+                    }
+
+                    &.img {
+                        height: 225px;
+                    }
                 }
             }
         }
     }
 }
+

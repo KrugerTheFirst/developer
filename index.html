@@ -7,7 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="build/main.css">
-    <script src="build/main.js"></script>
+    
 </head>
 
 <body>
@@ -112,72 +112,69 @@
                     <input type="text" placeholder="Imię i nazwisko" />
                     <input type="text" placeholder="E-mail" />
 
-                    <div data-dropdown="1" class="contact__form_dropdown">
+                    <div data-dropdown="houses" class="contact__form_dropdown">
                         <a>
                             <span>1 KROK</span>
                             <span>Wybierz dom</span>
                         </a>
                         <ul>
-                            <li>
-                                <img src="" />
-                            </li>
-                            <li>
+                            <li data-house="1a">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_house" value="1a" type="radio" required />
                                     <span>Dom 1A</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-house="1b">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_house" value="1b" type="radio" required />
                                     <span>Dom 1B</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-house="2a">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_house" value="2a" type="radio" required />
                                     <span>Dom 2A</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-house="2b">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_house" value="2b" type="radio" required />
                                     <span>Dom 2B</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-house="3">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_house" value="3" type="radio" required />
                                     <span>Dom 3</span>
                                 </label>
                             </li>
                         </ul>
                     </div>
 
-                    <div data-dropdown="2" class="contact__form_dropdown contact__form_dropdown--disabled">
+                    <div data-dropdown="places" class="contact__form_dropdown contact__form_dropdown--disabled">
                         <a>
                             <span>2 KROK</span>
                             <span>Wybierz działkę</span>
                         </a>
                         <ul>
-                            <li>
-                                <img src="" />
+                            <li class="img">
+                                <img src="build/img/places.jpg" />
                             </li>
-                            <li>
+                            <li data-place="place_1">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_place" value="place_1" type="radio" required />
                                     <span>Działka nr 1</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-place="place_2">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_place" value="place_2" type="radio" required />
                                     <span>Działka nr 2</span>
                                 </label>
                             </li>
-                            <li>
+                            <li data-place="place_3">
                                 <label>
-                                    <input type="checkbox" />
+                                    <input name="offer_place" value="place_3" type="radio" required />
                                     <span>Działka nr 3</span>
                                 </label>
                             </li>
@@ -206,6 +203,8 @@
         </div>
     </footer>
 
+    <script src="reservations.js"></script>
+    <script src="build/main.js"></script>
 </body>
 
 </html>
