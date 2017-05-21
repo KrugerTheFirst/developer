@@ -3,7 +3,7 @@
   .title {
     width: 424px;
     height: 72px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 72px;
     font-weight: 300;
     text-align: center;
@@ -14,7 +14,7 @@
   .text {
     width: 997px;
     height: 85px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 22px;
     line-height: 1.45;
     text-align: center;
@@ -25,7 +25,7 @@
     &-development {
       width: 997px;
       height: 85px;
-      font-family: Lato;
+      font-family: 'Lato', sans-serif;
       font-size: 22px;
       line-height: 1.45;
       text-align: center;
@@ -34,5 +34,16 @@
     }
   }
 
+  .button {
+    width: 150px;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    line-height: 1.45;
+    text-align: center;
+    color: #88b04b;
+    border-radius: 35px;
+    border: solid 2px #88b04b;
+    padding: 26px 65px;
+  }
 
 }
