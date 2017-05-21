@@ -10,7 +10,9 @@
     "gulp-rimraf": "^0.2.1",
     "gulp-scss": "^1.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-rimraf": "^0.2.1"
+  },
   "scripts": {
     "test": "bond"
   },

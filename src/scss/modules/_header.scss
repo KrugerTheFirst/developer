@@ -7,19 +7,24 @@ header {
   .logo {
     width: 252px;
     height: 30px;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 32.5px;
     font-weight: 100;
     text-align: left;
     color: #313d4d;
+    line-height: 78px;
+    padding-left: 126px;
+
 
     &--second {
       color: #88b04b;
+      line-height: 20px;
+      padding-left: 296px;
     }
   }
 
   nav {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 22px;
     font-weight: 300;
     color: #313d4d;
