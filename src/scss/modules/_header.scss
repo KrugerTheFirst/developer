@@ -1,8 +1,12 @@
 header {
-  width: 1440px;
+  max-width: 1440px;
   height: 78px;
   background-color: #ffffff;
   border: solid 1px #ebebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
 
   .logo {
     width: 252px;
