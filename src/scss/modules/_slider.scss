@@ -1,0 +1,86 @@
+.slider {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 1000px;
+    background: url('img/slider-background@2x.jpg') no-repeat 50% 0%;
+    background-size: contain;
+
+    &__container {
+        max-width: 1400px;
+        margin: 80px auto 0px auto;
+        min-height: 700px;
+        position: relative;
+    }
+
+    &__slide {
+        width: 100%;
+        min-height: 700px;
+        margin: 80px;
+        display: block;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: 40% 0%;
+        background-size: contain;
+    }
+
+    &__next, &__prev {
+        width: 80px;
+        height: 45px;
+        font-size: 22px;
+        padding-top: 15px;
+        padding-left: 40px;
+        background: url('img/arrow-left.png') no-repeat 0% 0%;
+        display: block;
+        position: absolute;
+        text-align: right;
+        left: 50px;
+        top: 170px;
+        z-index: 80;
+        cursor: pointer;
+        color: #88b04b;
+    }
+
+    &__next {
+        text-align: left;
+        padding: 0;
+        padding-bottom: 10px;
+        padding-right: 90px;
+        background: url('img/arrow-right.png') no-repeat 100% 100%;
+        left: auto;
+        top: auto;
+        right: 40px;
+        bottom: 190px;
+    }
+
+    &__dots {
+        position: absolute;
+        right: 110px;
+        top: 240px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 5px 0;
+
+            button {
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: none;
+                border: 1px solid #88b04b;
+                color: transparent;
+                font-size: 0px;
+                cursor: pointer;
+            }
+
+            &.slick-active {
+                button {
+                    background: #abdc60;
+                }
+                
+            }
+        }
+    }
+}

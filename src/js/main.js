@@ -147,6 +147,19 @@ var Dropdown = {
     }
 };
 
+
+
+
+
 $(function () {
     Dropdown.init();
+
+    $('[data-slider]').slick({
+        dots: true,
+        dotsClass: 'slider__dots',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: '<span class="slider__next">dalej</span>',
+        prevArrow: '<span class="slider__prev">wstecz</span>'
+    });
 });
