@@ -1,5 +1,5 @@
 header {
-  max-width: 1440px;
+  width: 100%;
   height: 78px;
   background-color: #ffffff;
   border: solid 1px #ebebeb;
@@ -7,33 +7,41 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
+  opacity: 0.5;
+  line-height: 78px;
 
   .logo {
-    width: 252px;
+    width: 147px;
     height: 30px;
     font-family: 'Lato', sans-serif;
-    font-size: 32.5px;
+    font-size: 30px;
     font-weight: 100;
     text-align: left;
     color: #313d4d;
-    line-height: 78px;
+    display: initial;
     padding-left: 126px;
 
 
     &--second {
       color: #88b04b;
-      line-height: 20px;
-      padding-left: 296px;
+      width: 105px;
+      padding-left: 0px;
     }
   }
 
   nav {
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-    color: #313d4d;
-    float: right;
+    display: inline;
+    font-size: 20px;
     text-align: center;
+    float: right;
     margin-right: 130px;
+
+    a {
+      font-family: 'Lato', sans-serif;
+      margin-right: 47px;
+      text-decoration: none;
+      color: #313d4d;
+    }
   }
 }

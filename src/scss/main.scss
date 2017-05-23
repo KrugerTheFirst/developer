@@ -13,8 +13,11 @@
     outline: none;
 }
 
+.non-underline:hover {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
