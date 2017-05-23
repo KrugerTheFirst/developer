@@ -8,42 +8,42 @@
     font-weight: 300;
     text-align: center;
     color: #323e4d;
-    padding-left: 513px;
+    margin: auto;
   }
 
   .text {
     width: 997px;
-    height: 85px;
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     line-height: 1.45;
     text-align: center;
     color: #666666;
-    padding-left: 221px;
+    margin: auto;
     margin-top: 84px;
 
     &-development {
       width: 997px;
-      height: 85px;
       font-family: 'Lato', sans-serif;
       font-size: 22px;
       line-height: 1.45;
-      text-align: center;
       color: #666666;
-      padding-left: 221px;
+      margin: auto;
+      text-align: center;
     }
   }
 
   .button {
-    width: 150px;
+    width: 275px;
+    height: 70px;
     font-family: 'Lato', sans-serif;
     font-size: 22px;
-    line-height: 1.45;
+    line-height: 70px;
     text-align: center;
     color: #88b04b;
     border-radius: 35px;
     border: solid 2px #88b04b;
-    padding: 26px 65px;
+    margin: auto;
+    margin-top: 5px;
   }
 
 }
