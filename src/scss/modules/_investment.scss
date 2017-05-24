@@ -41,7 +41,7 @@
     display: inline-block;
     column-count: 3;
 
-    h1 {
+    .ball {
       width: 220px;
       height: 220px;
       background-color: #eaeaea;
@@ -56,7 +56,7 @@
       padding-top: 25%;
     }
 
-    h2 {
+    span {
       width: 164px;
       height: 55px;
       font-family: 'Lato', sans-serif;
