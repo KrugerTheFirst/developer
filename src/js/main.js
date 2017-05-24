@@ -153,8 +153,8 @@ function map() {
     var $map = $('[data-map]');
     if ($map.length > 0) {
         $map.googleMap({
-            zoom: 14,
-            coords: [52.870519, 20.5344573],
+            zoom: 13,
+            coords: [52.895706,20.6330593],
             type: "ROADMAP",
             styles: [
                 {
@@ -425,8 +425,10 @@ function map() {
             ]
         }).addMarker({
             coords: [52.870519, 20.6334573],
-            icon: 'build/img/map-pin.png',
-            // url: '#'
+            icon: 'build/img/map-pin.png'
+        }).addMarker({
+            coords: [52.895706,20.6330593],
+            icon: 'build/img/map-pin-empty.png'
         });
     }
 }
