@@ -11,227 +11,262 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            Rezydencje
-            <span class="logo logo--second">Ostoja</span>
+<header>
+    <div class="logo">
+        Rezydencje
+        <span class="logo logo--second">Ostoja</span>
+    </div>
+
+    <nav id="navigation">
+        <a href="/html/">O inwestycji</a>
+        <a href="/html/">Domy</a>
+        <a href="/html/">Lokalizacja</a>
+        <a href="/html/">Kontakt</a>
+    </nav>
+</header>
+
+<section class="slider">
+    <div class="slider__container" data-slider>
+        <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
+        <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
+        <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
+    </div>
+</section>
+
+<section class="investment investment--open">
+    <h2>
+        O inwestycji.
+    </h2>
+
+    <div class="investment__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+        laudantium, totam rem aperiam.
+    </div>
+
+    <div class="investment__more">
+        <div class="investment__text investment__more_text">
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+            voluptatem.
         </div>
 
-        <nav id="navigation">
-            <a href="/html/">O inwestycji</a>
-            <a href="/html/">Domy</a>
-            <a href="/html/">Lokalizacja</a>
-            <a href="/html/">Kontakt</a>
-        </nav>
-    </header>
-
-    <section class="slider">
-        <div class="slider__container" data-slider>
-            <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
-            <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
-            <div class="slider__slide" style="background-image: url('build/img/slider_1.png');"></div>
-        </div>
-    </section>
-
-    <section class="investment">
-        <div class="title">
-            O inwestycji.
-        </div>
-
-        <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate.
-
-        </div>
-
-        <div class="text-development">
-
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-        </div>
-
-        <div class="placeholder">
+        <div class="investment__placeholder">
             <div class="ball">Placeholder
-                (nie wiem co tu ma być?)</div>
-            <span>Lorem ipsum
-                dolor</span>
+                (nie wiem co tu ma być?)
+            </div>
+            <div class="name">Lorem ipsum
+                dolor
+            </div>
             <div class="ball">Placeholder
-                (nie wiem co tu ma być?)</div>
-            <span>Lorem ipsum
-                dolor</span>
+                (nie wiem co tu ma być?)
+            </div>
+            <div class="name">Lorem ipsum
+                dolor
+            </div>
             <div class="ball">Placeholder
-                (nie wiem co tu ma być?)</div>
-            <span>Lorem ipsum
-                dolor</span>
+                (nie wiem co tu ma być?)
+            </div>
+            <div class="name">Lorem ipsum
+                dolor
+            </div>
         </div>
-
-        <div class="shadow">
-            <img src="build/img/shadow-galery.png">
-        </div>
-
-        <div class="button">
-            CZYTAJ DALEJ
-        </div>
-
-        <div class="button button--close">
+        <div class="investment__button">
+            <span class="button button--close">
             ZWIŃ DO GÓRY
+        </span>
         </div>
-    </section>
+    </div>
 
-    <section class="vizualization">
-        <div class="logo">
-            Zobacz wizualizacje.
+
+    <div class="investment__button" data-toogle-categories>
+    <span class="button">
+            CZYTAJ DALEJ
+        </span>
+    </div>
+</section>
+
+<section class="vizualization">
+    <h2>Zobacz wizualizacje.</h2>
+    <div class="vizualization__gallery">
+        <div class="vizualization__gallery_img">
+            <img src="build/img/img-1.png">
         </div>
-
-        <div class="gallery">
-
+        <div class="vizualization__gallery_text">Wersja B</div>
+        <div class="vizualization__gallery_cost">Od 300 000zł</div>
+        <div class="vizualization__gallery_img">
+            <img src="build/img/img-2.png">
         </div>
-
-        <div class="shadow">
-
+        <div class="vizualization__gallery_text">Wersja B</div>
+        <div class="vizualization__gallery_cost">Od 600 000zł</div>
+        <div class="vizualization__gallery_img">
+            <img src="build/img/img-3.png">
         </div>
-    </section>
+        <div class="vizualization__gallery_text">Wersja B</div>
+        <div class="vizualization__gallery_cost">Od 600 000zł</div>
+    </div>
 
-    <section class="localization">
-        <div class="logo">
-            Lokalizacja.
+    <div class="shadow">
+        <img src="build/img/shadow-galery.png">
+    </div>
+
+    <div class="vizualization__popup">
+        <div class="vizualization__popup_close">
+            <img src="build/img/close.png">
+            <span>zamknij</span>
         </div>
-
-        <div class="map">
-
+        <span>Pobierz lub wydrukuj kartę wybranego produktu</span>
+        <div class="vizualization__popup_button">
+            <img src="build/img/download-icon-normal.png">
         </div>
-
-        <div class="info">
-
+        <div class="vizualization__popup_button vizualization__popup_button--2">
+            <img src="build/img/print-icon-on-hover.png">
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="contact">
-        <h2>Kontakt.</h2>
+<section class="localization">
+    <div class="logo">
+        Lokalizacja.
+    </div>
 
-        <div class="contact__form">
-            <div class="contact__form_column">
-                <form action="" method="post">
-                    <p>Zostaw nam swój numer telefonu lub adres e-mail, a my skontaktujemy się z Tobą w ciągu 24h.</p>
-                    <input type="text" placeholder="Imię i nazwisko" />
-                    <input type="text" placeholder="Nr telefonu" />
+    <div class="map">
 
-                    <span>Lub</span>
+    </div>
 
-                    <input type="text" placeholder="E-mail" />
-                    <textarea placeholder="Wiadomosć"></textarea>
-                    <label>
-                        <input type="checkbox" />
-                        <span>Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
-                    </label>
-                    <input type="submit" value="wyślij" />
-                </form>
-            </div>
-            <div class="contact__form_column contact__form_column--green">
-                <form action="" method="post">
-                    <h3>Lub możesz</h3>
-                    <p>Wybrać interesujący Cię domek i działkę, a my prześlemy Ci wstępną ofertę.</p>
-                    <input type="text" placeholder="Imię i nazwisko" />
-                    <input type="text" placeholder="E-mail" />
+    <div class="info">
 
-                    <div data-dropdown="houses" class="contact__form_dropdown">
-                        <a>
-                            <span>1 KROK</span>
-                            <span>Wybierz dom</span>
-                        </a>
-                        <ul>
-                            <li data-house="1a">
-                                <label>
-                                    <input name="offer_house" value="1a" type="radio" required />
-                                    <span>Dom 1A</span>
-                                </label>
-                            </li>
-                            <li data-house="1b">
-                                <label>
-                                    <input name="offer_house" value="1b" type="radio" required />
-                                    <span>Dom 1B</span>
-                                </label>
-                            </li>
-                            <li data-house="2a">
-                                <label>
-                                    <input name="offer_house" value="2a" type="radio" required />
-                                    <span>Dom 2A</span>
-                                </label>
-                            </li>
-                            <li data-house="2b">
-                                <label>
-                                    <input name="offer_house" value="2b" type="radio" required />
-                                    <span>Dom 2B</span>
-                                </label>
-                            </li>
-                            <li data-house="3">
-                                <label>
-                                    <input name="offer_house" value="3" type="radio" required />
-                                    <span>Dom 3</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
+    </div>
+</section>
 
-                    <div data-dropdown="places" class="contact__form_dropdown contact__form_dropdown--disabled">
-                        <a>
-                            <span>2 KROK</span>
-                            <span>Wybierz działkę</span>
-                        </a>
-                        <ul>
-                            <li class="img">
-                                <img src="build/img/places.jpg" />
-                            </li>
-                            <li data-place="place_1">
-                                <label>
-                                    <input name="offer_place" value="place_1" type="radio" required />
-                                    <span>Działka nr 1</span>
-                                </label>
-                            </li>
-                            <li data-place="place_2">
-                                <label>
-                                    <input name="offer_place" value="place_2" type="radio" required />
-                                    <span>Działka nr 2</span>
-                                </label>
-                            </li>
-                            <li data-place="place_3">
-                                <label>
-                                    <input name="offer_place" value="place_3" type="radio" required />
-                                    <span>Działka nr 3</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
+<section class="contact">
+    <h2>Kontakt.</h2>
 
+    <div class="contact__form">
+        <div class="contact__form_column">
+            <form action="" method="post">
+                <p>Zostaw nam swój numer telefonu lub adres e-mail, a my skontaktujemy się z Tobą w ciągu 24h.</p>
+                <input type="text" placeholder="Imię i nazwisko"/>
+                <input type="text" placeholder="Nr telefonu"/>
 
+                <span>Lub</span>
 
-                    <label>
-                        <input type="checkbox" />
-                        <span>Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
-                    </label>
-                    <input type="submit" value="wyślij" />
-                </form>
-            </div>
+                <input type="text" placeholder="E-mail"/>
+                <textarea placeholder="Wiadomosć"></textarea>
+                <label>
+                    <input type="checkbox"/>
+                    <span>Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
+                </label>
+                <input type="submit" value="wyślij"/>
+            </form>
         </div>
+        <div class="contact__form_column contact__form_column--green">
+            <form action="" method="post">
+                <h3>Lub możesz</h3>
+                <p>Wybrać interesujący Cię domek i działkę, a my prześlemy Ci wstępną ofertę.</p>
+                <input type="text" placeholder="Imię i nazwisko"/>
+                <input type="text" placeholder="E-mail"/>
 
-        <div class="info">
+                <div data-dropdown="houses" class="contact__form_dropdown">
+                    <a>
+                        <span>1 KROK</span>
+                        <span>Wybierz dom</span>
+                    </a>
+                    <ul>
+                        <li data-house="1a">
+                            <label>
+                                <input name="offer_house" value="1a" type="radio" required/>
+                                <span>Dom 1A</span>
+                            </label>
+                        </li>
+                        <li data-house="1b">
+                            <label>
+                                <input name="offer_house" value="1b" type="radio" required/>
+                                <span>Dom 1B</span>
+                            </label>
+                        </li>
+                        <li data-house="2a">
+                            <label>
+                                <input name="offer_house" value="2a" type="radio" required/>
+                                <span>Dom 2A</span>
+                            </label>
+                        </li>
+                        <li data-house="2b">
+                            <label>
+                                <input name="offer_house" value="2b" type="radio" required/>
+                                <span>Dom 2B</span>
+                            </label>
+                        </li>
+                        <li data-house="3">
+                            <label>
+                                <input name="offer_house" value="3" type="radio" required/>
+                                <span>Dom 3</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
 
+                <div data-dropdown="places" class="contact__form_dropdown contact__form_dropdown--disabled">
+                    <a>
+                        <span>2 KROK</span>
+                        <span>Wybierz działkę</span>
+                    </a>
+                    <ul>
+                        <li class="img">
+                            <img src="build/img/places.jpg"/>
+                        </li>
+                        <li data-place="place_1">
+                            <label>
+                                <input name="offer_place" value="place_1" type="radio" required/>
+                                <span>Działka nr 1</span>
+                            </label>
+                        </li>
+                        <li data-place="place_2">
+                            <label>
+                                <input name="offer_place" value="place_2" type="radio" required/>
+                                <span>Działka nr 2</span>
+                            </label>
+                        </li>
+                        <li data-place="place_3">
+                            <label>
+                                <input name="offer_place" value="place_3" type="radio" required/>
+                                <span>Działka nr 3</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <label>
+                    <input type="checkbox"/>
+                    <span>Wyrażam zgodę na przetwarzanie moich danych osobowych</span>
+                </label>
+                <input type="submit" value="wyślij"/>
+            </form>
         </div>
-    </section>
+    </div>
 
-    <footer>
-        <div class="text">
-            Copyright © 2017 Rezydencja Ostoja
-        </div>
-    </footer>
+    <div class="info">
 
-    <script src="reservations.js"></script>
-    <script src="build/main.js"></script>
+    </div>
+</section>
+
+<footer>
+    <div class="text">
+        Copyright © 2017 Rezydencja Ostoja
+    </div>
+</footer>
+
+<script src="reservations.js"></script>
+<script src="build/main.js"></script>
 </body>
 
 </html>
