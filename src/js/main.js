@@ -446,4 +446,13 @@ $(function () {
         nextArrow: '<span class="slider__next">dalej</span>',
         prevArrow: '<span class="slider__prev">wstecz</span>'
     });
+
+
+    $('[data-visualization-popup]').on('click', function(){
+        $('.vizualization__popup').addClass('vizualization__popup--open');
+    });
+
+    $('[data-visualization-popup-close]').on('click', function(){
+        $('.vizualization__popup').removeClass('vizualization__popup--open');
+    });
 });

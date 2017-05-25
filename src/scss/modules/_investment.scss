@@ -1,26 +1,23 @@
 .investment {
 
   &--open {
-  .investment__more {
-    display: none;
-  }
-
+    .investment__more {
+      display: none;
+    }
   }
 
   h2 {
     width: 424px;
     height: 72px;
-    font-family: 'Lato', sans-serif;
     font-size: 72px;
     font-weight: 300;
     text-align: center;
     color: #323e4d;
-    margin: auto;
+    padding-top: 40px;
   }
 
   .investment__text {
     width: 997px;
-    font-family: 'Lato', sans-serif;
     font-size: 22px;
     line-height: 1.45;
     text-align: center;
@@ -33,7 +30,6 @@
 
     .investment__more_text {
       width: 997px;
-      font-family: 'Lato', sans-serif;
       font-size: 22px;
       line-height: 1.45;
       color: #666666;
@@ -45,7 +41,6 @@
 
     .investment__placeholder {
       width: 100%;
-      font-family: 'Lato', sans-serif;
       box-sizing: border-box;
       margin: 0;
       outline: none;
@@ -57,7 +52,6 @@
         height: 220px;
         background-color: #eaeaea;
         opacity: 0.6;
-        font-family: 'Lato', sans-serif;
         font-size: 18px;
         line-height: 1.78;
         text-align: center;
@@ -70,7 +64,6 @@
       .name {
         width: 164px;
         height: 55px;
-        font-family: 'Lato', sans-serif;
         font-size: 30px;
         line-height: 1.07;
         text-align: center;
@@ -88,7 +81,6 @@
     text-align: center;
 
     .button {
-      font-family: 'Lato', sans-serif;
       font-size: 22px;
       line-height: 22px;
       text-align: center;

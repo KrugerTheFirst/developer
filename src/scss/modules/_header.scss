@@ -1,24 +1,28 @@
-header {
+.header {
   width: 100%;
   height: 78px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: solid 1px #ebebeb;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: solid 1px #ebebeb;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
   line-height: 78px;
 
-  .logo {
+  &__container {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 0px 10px;
+  }
+
+  &__logo {
     width: 147px;
     height: 30px;
-    font-family: 'Lato', sans-serif;
     font-size: 30px;
     font-weight: 100;
-    text-align: left;
     color: #313d4d;
-    display: initial;
-    padding-left: 126px;
+    display: inline-bock;
+    text-decoration: none;
 
 
     &--second {
@@ -29,18 +33,46 @@ header {
   }
 
   nav {
-    font-family: 'Lato', sans-serif;
-    display: inline;
-    font-size: 20px;
+    display: block;
+    font-size: 22px;
     text-align: center;
     float: right;
-    margin-right: 130px;
 
     a {
-      font-family: 'Lato', sans-serif;
-      margin-right: 47px;
+      margin-left: 47px;
+      font-weight: 300;
       text-decoration: none;
       color: #313d4d;
+      position: relative;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        &:before {
+          content: '';
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          border-bottom: 1px solid #313d4d;
+          display: block;
+          position: absolute;
+        }
+      }
+
+      &.active {
+        color: #abdc60;
+        font-weight: bold;
+
+        &:hover {
+          &:before {
+            border-bottom: 1px solid #abdc60;
+          }
+        }
+      }
+
+      
     }
   }
 }
