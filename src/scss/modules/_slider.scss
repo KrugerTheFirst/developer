@@ -7,7 +7,7 @@
     background-size: contain;
 
     &__container {
-        max-width: 1400px;
+        width: 100%;
         margin: 80px auto 0px auto;
         min-height: 700px;
         position: relative;
@@ -82,5 +82,22 @@
                 
             }
         }
+    }
+
+    @media only screen and (min-width: $breakpointDesktop) {
+
+        &__next, &__prev {
+            left: 10%;
+        }
+
+        &__next {
+            left: auto;
+            right: 10%;
+        }
+
+        &__dots {
+            right: 15%;
+        }
+
     }
 }
