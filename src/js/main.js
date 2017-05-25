@@ -154,7 +154,7 @@ function map() {
     if ($map.length > 0) {
         $map.googleMap({
             zoom: 13,
-            coords: [52.895706,20.6330593],
+            coords: [52.895706, 20.6330593],
             type: "ROADMAP",
             styles: [
                 {
@@ -427,7 +427,7 @@ function map() {
             coords: [52.870519, 20.6334573],
             icon: 'build/img/map-pin.png'
         }).addMarker({
-            coords: [52.895706,20.6330593],
+            coords: [52.895706, 20.6330593],
             icon: 'build/img/map-pin-empty.png'
         });
     }
@@ -448,11 +448,29 @@ $(function () {
     });
 
 
-    $('[data-visualization-popup]').on('click', function(){
+    $('[data-visualization-popup]').on('click', function () {
         $('.vizualization__popup').addClass('vizualization__popup--open');
     });
 
-    $('[data-visualization-popup-close]').on('click', function(){
+    $('[data-visualization-popup-close]').on('click', function () {
         $('.vizualization__popup').removeClass('vizualization__popup--open');
     });
+
+
+    $('[data-more]').on('click', function () {
+        var labels = JSON.parse($(this).attr('data-more')),
+            $investment = $('.investment');
+
+        $investment.toggleClass('investment--open');
+
+        if (!$investment.hasClass('investment--open')) {
+            $('html, body').animate({
+                scrollTop: ($investment.offset().top - 100) + 'px'
+            });
+        }
+
+        $(this).html(labels[!$investment.hasClass('investment--open') ? 0 : 1]);
+    });
+
+
 });
