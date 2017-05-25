@@ -1,6 +1,13 @@
 .investment {
 
-  .title {
+  &--open {
+  .investment__more {
+    display: none;
+  }
+
+  }
+
+  h2 {
     width: 424px;
     height: 72px;
     font-family: 'Lato', sans-serif;
@@ -8,42 +15,93 @@
     font-weight: 300;
     text-align: center;
     color: #323e4d;
-    padding-left: 513px;
+    margin: auto;
   }
 
-  .text {
+  .investment__text {
     width: 997px;
-    height: 85px;
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     line-height: 1.45;
     text-align: center;
     color: #666666;
-    padding-left: 221px;
+    margin: auto;
     margin-top: 84px;
+  }
 
-    &-development {
+  &__more {
+
+    .investment__more_text {
       width: 997px;
-      height: 85px;
       font-family: 'Lato', sans-serif;
       font-size: 22px;
       line-height: 1.45;
-      text-align: center;
       color: #666666;
-      padding-left: 221px;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 90px;
+      margin-top: 22px;
+    }
+
+    .investment__placeholder {
+      width: 100%;
+      font-family: 'Lato', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      outline: none;
+      display: inline-block;
+      column-count: 3;
+
+      .ball {
+        width: 220px;
+        height: 220px;
+        background-color: #eaeaea;
+        opacity: 0.6;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        line-height: 1.78;
+        text-align: center;
+        color: rgba(136, 176, 75, 0.6);
+        margin: auto;
+        border-radius: 50%;
+        padding-top: 25%;
+      }
+
+      .name {
+        width: 164px;
+        height: 55px;
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+        line-height: 1.07;
+        text-align: center;
+        color: #666666;
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+
+  }
+
+  .investment__button {
+    padding-top: 172px;
+    background: url('../build/img/shadow-info.png') no-repeat center top;
+    text-align: center;
+
+    .button {
+      font-family: 'Lato', sans-serif;
+      font-size: 22px;
+      line-height: 22px;
+      text-align: center;
+      color: #88b04b;
+      border-radius: 35px;
+      border: solid 2px #88b04b;
+      padding: 22px 56px;
+      display: inline-block;
+      margin: auto;
+
+      &--second {
+
+      }
     }
   }
-
-  .button {
-    width: 150px;
-    font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    line-height: 1.45;
-    text-align: center;
-    color: #88b04b;
-    border-radius: 35px;
-    border: solid 2px #88b04b;
-    padding: 26px 65px;
-  }
-
 }
