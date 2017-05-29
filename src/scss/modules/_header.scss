@@ -1,78 +1,148 @@
 .header {
-  width: 100%;
-  height: 78px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: solid 1px #ebebeb;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  line-height: 78px;
+    width: 100%;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-bottom: solid 1px #ebebeb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    line-height: 78px;
 
-  &__container {
-    margin: 0 auto;
-    max-width: 1180px;
-    padding: 0px 10px;
-  }
-
-  &__logo {
-    width: 147px;
-    height: 30px;
-    font-size: 30px;
-    font-weight: 100;
-    color: #313d4d;
-    display: inline-bock;
-    text-decoration: none;
-
-
-    &--second {
-      color: #88b04b;
-      width: 105px;
-      padding-left: 0px;
+    &__container {
+      margin: 0 auto;
+      max-width: 1180px;
+      padding: 0px 10px;
     }
-  }
 
-  nav {
-    display: block;
-    font-size: 22px;
-    text-align: center;
-    float: right;
-
-    a {
-      margin-left: 47px;
-      font-weight: 300;
-      text-decoration: none;
+    &__logo {
+      width: 147px;
+      height: 30px;
+      font-size: 30px;
+      font-weight: 100;
       color: #313d4d;
-      position: relative;
+      display: inline-bock;
+      text-decoration: none;
 
-      &:first-child {
-        margin-left: 0;
+
+      &--second {
+        color: #88b04b;
+        width: 105px;
+        padding-left: 0px;
+      }
+    }
+
+    &__hamburger {
+      width: 32px;
+      height: 32px;
+      margin: 25px 10px;
+      display: block;
+      float: right;
+      background: url('img/hamburger.png') no-repeat 50% 50%;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &--close {
+        background-image: url('img/close.png');
+      }
+    }
+
+    &__nav {
+
+      &--open {
+        visibility: visible;
+        opacity: 1;
       }
 
-      &:hover {
-        &:before {
-          content: '';
-          width: 100%;
-          bottom: 0;
-          left: 0;
-          border-bottom: 1px solid #313d4d;
-          display: block;
-          position: absolute;
+      display: block;
+      opacity: 0;
+      visibility: hidden;
+      font-size: 16px;
+      line-height: 50px;
+      position: absolute;
+      text-align: right;
+      top: 78px;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: solid 1px #ebebeb;
+      transition: all 0.3s ease-in-out;
+
+      a {
+        line-height: 20px;
+        display: inline-block;
+        text-align: right;
+        margin: 0px 5px 0px 10px;
+        font-weight: 300;
+        text-decoration: none;
+        color: #313d4d;
+        position: relative;
+
+        &:first-child {
+          margin: 0px 5px 0px 10px;
         }
-      }
-
-      &.active {
-        color: #abdc60;
-        font-weight: bold;
 
         &:hover {
           &:before {
-            border-bottom: 1px solid #abdc60;
+            content: '';
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border-bottom: 1px solid #313d4d;
+            display: block;
+            position: absolute;
+          }
+        }
+
+        &.active {
+          color: #abdc60;
+          font-weight: bold;
+
+          &:hover {
+            &:before {
+              border-bottom: 1px solid #abdc60;
+            }
           }
         }
       }
+    }
 
+  
+
+    @media only screen and (min-width: $breakpointTablet) {
+
+      &__hamburger {
+        display: none;
+      }
+
+      &__nav {
+        display: block;
+        font-size: 22px;
+        text-align: center;
+        float: right;
+        position: relative;
+        top: auto;
+        right: auto;
+        border: 0;
+        background: none;
+        line-height: 78px;
+
+          a {
+              margin: auto;
+              margin-left: 47px;
+              font-weight: 300;
+              text-decoration: none;
+              color: #313d4d;
+              position: relative;
+              display: inline;
+
+              &:first-child {
+                margin: auto;
+                margin-left: 0;
+              }
+
+                      
+          }
+        }
       
     }
-  }
 }

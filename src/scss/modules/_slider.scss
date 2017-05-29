@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    min-height: 0;
+    max-height: 60vh;
     background: url('img/slider-background@2x.jpg') no-repeat 50% 0%;
     background-size: contain;
 
@@ -66,6 +66,7 @@
 
     @media only screen and (min-width: $breakpointTablet) {
 
+        max-height: 1000px;
         min-height: 800px;
 
         &__container {
@@ -75,7 +76,7 @@
 
         &__slide {
             min-height: 700px;
-            margin: 80px;
+            margin: 80px 150px;
         }
 
         &__next, &__prev {

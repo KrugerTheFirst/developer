@@ -473,4 +473,12 @@ $(function () {
     });
 
 
+    $('[data-hamburger]').on('click', function(){
+        var $this = $(this), 
+            $nav = $($this.attr('data-hamburger'));
+    
+        $this.toggleClass($this.attr('data-toggle'));
+        $nav.toggleClass($nav.attr('data-toggle'), $this.hasClass($this.attr('data-toggle')));
+    });
+
 });
