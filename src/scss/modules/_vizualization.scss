@@ -1,14 +1,15 @@
 .vizualization {
   position: relative;
 
-  .vizualization__gallery {
+  &__gallery {
     list-style: none;
     margin: 0;
     padding: 0;
 
     li {
-      width: 33%;
-      float: left;
+      width: 100%;
+      clear: both;
+      float: none;
       text-align: center;
       cursor: pointer;
       padding-bottom: 100px;
@@ -66,7 +67,7 @@
   }
 
 
-  .vizualization__popup {
+  &__popup {
     width: 100%;
     max-width: 1180px;
     height: 621px;
@@ -79,12 +80,23 @@
     opacity: 0;
     transition: all 0.2s ease-in-out;
 
+     span {
+      width: 100%;
+      height: 30px;
+      font-size: 30px;
+      text-align: center;
+      color: #ffffff;
+      padding: 50px 0px 0px;
+      margin-bottom: 110px;
+      display: inline-block;
+    }
+
     &--open {
       opacity: 1;
       z-index: 2;
     }
 
-    .vizualization__popup_close {
+    &_close {
       height: 28.6px;
       cursor: pointer;
       
@@ -97,7 +109,7 @@
         margin: 40px 40px 40px 20px;
       }
 
-      span {
+      & > span {
         width: 73px;
         height: 22px;
         font-size: 22px;
@@ -110,18 +122,9 @@
       }
     }
 
-    span {
-      width: 100%;
-      height: 30px;
-      font-size: 30px;
-      text-align: center;
-      color: #ffffff;
-      padding: 50px 0px 0px;
-      margin-bottom: 110px;
-      display: inline-block;
-    }
+   
 
-    .vizualization__popup_button{
+    &_button{
       width: 210px;
       height: 210px;
       border: solid 4px #88b04b;
@@ -139,5 +142,16 @@
       }
 
     }
+  }
+
+  @media only screen and (min-width: $breakpointTablet) {
+      &__gallery {
+
+        li {
+          width: 33%;
+          float: left;
+          clear: none;
+        }
+      }
   }
 }
