@@ -7,39 +7,23 @@
     }
   }
 
-  h2 {
-    width: 424px;
-    height: 72px;
-    font-size: 72px;
-    font-weight: 300;
-    text-align: center;
-    color: #323e4d;
-    padding-top: 40px;
-  }
-
   .investment__text {
-    width: 997px;
-    font-size: 22px;
+    max-width: 997px;
+    font-size: 18px;
     line-height: 1.45;
     text-align: center;
     color: #666666;
-    margin: auto;
-    margin-top: 84px;
+    margin: 0 auto;
   }
 
   &__more {
       height: 0;
       opacity: 0;
+      overflow: hidden;
       transition: all 0.1s ease-in-out;
     
 
     .investment__more_text {
-      width: 997px;
-      font-size: 22px;
-      line-height: 1.45;
-      color: #666666;
-      margin: auto;
-      text-align: center;
       margin-bottom: 90px;
       margin-top: 22px;
     }
@@ -50,7 +34,7 @@
       margin: 0;
       outline: none;
       display: inline-block;
-      column-count: 3;
+      column-count: 1;
 
       .ball {
         width: 220px;
@@ -68,34 +52,67 @@
 
       .name {
         width: 164px;
-        height: 55px;
+        min-height: 55px;
         font-size: 30px;
         line-height: 1.07;
         text-align: center;
         color: #666666;
         margin: auto;
         margin-top: 30px;
+        margin-bottom: 50px;
       }
     }
 
   }
 
   .investment__button {
-    padding-top: 132px;
+    padding-top: 85px;
     padding-bottom: 50px;
     background: url('../build/img/shadow-info.png') no-repeat center top;
+    background-size: contain;
     text-align: center;
 
     span {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 22px;
+      padding: 12px 35px;
       text-align: center;
       color: #88b04b;
       border-radius: 35px;
       border: solid 2px #88b04b;
-      padding: 22px 56px;
       display: inline-block;
       cursor: pointer;
     }
+  }
+
+  @media only screen and (min-width: $breakpointPhablet) {
+      .investment__placeholder {
+          column-count: 3;
+      }
+  }
+
+  @media only screen and (min-width: $breakpointTablet) {
+
+    .investment__text {
+      font-size: 22px;
+      line-height: 1.45;
+    }
+
+    .investment__button {
+        background-size: initial;
+        padding-top: 132px;
+
+        span {
+          font-size: 22px;
+          line-height: 22px;
+          padding: 22px 56px;
+        }
+      }
+
+      .investment__placeholder {
+          .name {
+            margin-bottom: 0;
+          }
+      }
   }
 }
