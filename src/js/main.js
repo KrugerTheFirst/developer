@@ -450,10 +450,14 @@ $(function () {
 
     $('[data-visualization-popup]').on('click', function () {
         $('.vizualization__popup').addClass('vizualization__popup--open');
+        $('.vizualization__popup').addClass($(this).attr('data-visualization-popup'));
     });
 
     $('[data-visualization-popup-close]').on('click', function () {
-        $('.vizualization__popup').removeClass('vizualization__popup--open');
+        $('.vizualization__popup').removeClass('vizualization__popup--open')
+            .removeClass('vizualization__popup--first')
+            .removeClass('vizualization__popup--second')
+            .removeClass('vizualization__popup--third');
     });
 
 

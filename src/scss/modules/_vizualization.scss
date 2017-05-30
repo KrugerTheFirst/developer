@@ -29,8 +29,10 @@
       }
 
       img {
-        height: 347.7px;
-        width: 346.7px;
+        max-height: 347.7px;
+        height: auto;
+        width: 100%;
+        max-width: 346.7px;
         border: solid 5px #eaeaea;
         background-color: #e0e0e0;
         overflow: hidden;
@@ -80,20 +82,32 @@
     opacity: 0;
     transition: all 0.2s ease-in-out;
 
-     span {
+    & > span {
       width: 100%;
       height: 30px;
-      font-size: 30px;
+      font-size: 15px;
       text-align: center;
       color: #ffffff;
-      padding: 50px 0px 0px;
-      margin-bottom: 110px;
+      padding: 20px 0px 0px;
+      margin-bottom: 50px;
       display: inline-block;
     }
 
     &--open {
       opacity: 1;
       z-index: 2;
+    }
+
+    &--first {
+      top: 140px;
+    }
+
+    &--second {
+      top: 700px;
+    }
+
+    &--third {
+      top: 1160px;
     }
 
     &_close {
@@ -125,19 +139,21 @@
    
 
     &_button{
-      width: 210px;
-      height: 210px;
+      max-width: 110px;
+      max-height: 110px;
       border: solid 4px #88b04b;
       border-radius: 50%;
       text-align: center;
-      padding: 60px 55px;
-      margin-left: 28.5%;
-      margin-right: 135px;
-      margin-bottom: 113px;
-      display: inline-block;
+      padding: 30px 25px;
+      margin: 50px auto;
+      display: block;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
 
       &--2 {
-        margin-left: 0;
         background-color: #88b04b;
       }
 
@@ -151,6 +167,34 @@
           width: 33%;
           float: left;
           clear: none;
+        }
+      }
+
+      &__popup {
+        &--first, &--second,  &--third {
+          top: 240px;
+        }
+
+        & > span {
+          height: 30px;
+          font-size: 30px;
+          padding: 50px 0px 0px;
+          margin-bottom: 110px;
+        }
+
+        &_button{
+          max-width: 210px;
+          max-height: 210px;
+          padding: 60px 55px;
+          margin-left: 28.5%;
+          margin-right: 135px;
+          margin-bottom: 113px;
+          display: inline-block;
+
+          &--2 {
+            margin-left: 0;
+          }
+
         }
       }
   }
