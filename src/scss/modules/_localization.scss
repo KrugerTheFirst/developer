@@ -8,7 +8,7 @@
 
     &__map {
         width: 100%;
-        height: 715px;
+        height: 315px;
     }
 
     &__info {
@@ -34,10 +34,10 @@
             position: relative;
 
             li {
-                width: 25%;
+                width: 100%;
                 text-align: center;
                 float: left;
-                padding: 0 30px;
+                padding: 30px;
 
                 & > div {
                     width: 170px;
@@ -85,6 +85,7 @@
             margin-left: -600px;
             z-index: 0;
             top: -70px;
+            display: none;
 
             &:before, &:after {
                 content: '';
@@ -107,5 +108,27 @@
                 border-right: 2px solid  #88b04b;
             }
         }
+    }
+
+    @media only screen and (min-width: $breakpointTablet) {
+        &__map {
+            width: 100%;
+            height: 715px;
+        }
+
+        &__info {
+            &_icons {
+                li {
+                    width: 25%;
+                    padding: 0 30px;
+                }
+            }
+
+            &_line {
+                display: block;
+            }
+        }
+
+        
     }
 }
