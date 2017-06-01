@@ -136,4 +136,19 @@
         }
 
     }
+
+
+
+    @media only screen and (max-width: $breakpointTablet)
+    and (orientation: landscape) {
+        max-height: 100vh;
+
+        &__slide {
+            min-height: 50vh;
+        }
+
+        &__dots {
+            top: 50vh;
+        }
+    }
 }
