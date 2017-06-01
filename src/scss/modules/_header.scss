@@ -93,9 +93,8 @@
           }
         }
 
-        &.active {
+        &.active, &:active {
           color: #abdc60;
-          font-weight: bold;
 
           &:hover {
             &:before {
