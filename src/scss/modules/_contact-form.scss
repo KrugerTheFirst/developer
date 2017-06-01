@@ -4,12 +4,12 @@
     form {
         width: 100%;
         max-width: 530px;
-        margin: 10px;
-        padding: 30px;
-        font-size: 22px;
+        margin: 10px 0px;
+        padding: 10px 20px;
+        font-size: 16px;
 
         input, textarea, & > span {
-            font-size: 22px;
+            font-size: 16px;
             width: 100%;
             max-width: 460px;
         }
@@ -29,9 +29,9 @@
 
     
         input[type="text"], textarea{
-            height: 70px;
-            margin: 0 auto 23px auto;
-            padding: 0 26px;
+            height: 50px;
+            margin: 0 auto 18px auto;
+            padding: 0 16px;
             display: block;
             background-color: #f7f7f7;
             border: solid 1px #d7d7d7;
@@ -90,8 +90,8 @@
         }
 
         input[type="submit"]{
-            height: 70px;
-            margin: 23px auto;
+            height: 50px;
+            margin: 18px auto;
             color: #ffffff;
             text-transform: uppercase;
             border: 0;
@@ -111,75 +111,61 @@
     }
 
     &_column {
-        width: 50%;
-        float: left;
-        clear: none;
+        
+        width: 100%;
+        float: none;
 
         &--green {
             form {
-                max-width: 513px;
                 border: 2px solid #88b04b;
                 padding-top: 15px;
-                float: right;
+                margin: 10px;
+                width: auto;
+                max-width: none;
+                float: none;
+                
 
                 h3 {
-                    font-size: 80px;
+                    font-size: 25px;
                     color: #88b04b;
                     background: #fff;
                     font-weight: 300;
-                    padding: 0px 15px 15px 15px;
+                    padding: 0px;
                     margin: 0;
                     position:relative;
-                    left: -105px;
+                    left: auto;
                 }
 
                 label {
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
-
-            @media only screen and (max-width: $breakpoint) {
-                form {
-                    margin: 10px;
-                    width: auto;
-                    max-width: none;
-                    float: none;
-                    
-                    h3 {
-                        left: auto;
-                    }
-                }
-            }
-        }
-
-        @media only screen and (max-width: $breakpoint) {
-            width: 100%;
-            float: none;
         }
     }
 
     &_dropdown {
         border: solid 1px #88b04b;
-        margin-bottom: 23px;
+        margin-bottom: 12px;
 
         a {
             width: 100%;
-            line-height: 68px;
+            line-height: 50px;
             border-bottom: 0px;
             display: block;
             color: #88b04b;
             cursor: pointer;
 
             span {
-                font-size: 22px;
-                padding: 0px 28px;
-                height: 68px;
+                font-size: 12px;
+                padding: 0px 5px 0px 10px;
+                height: 50px;
                 display: inline-block;
                 text-transform: uppercase;
             }
 
             span + span {
                 border-left: 1px solid #88b04b;
+                padding: 0px 25px 0px 12px;
                 background: url('img/dropdown-arrow.png') no-repeat 100% 50%;
             }
         }
@@ -200,28 +186,32 @@
                 transition: visibility .1s ease-in, height .1s ease-in, opacity .1s ease-in;
 
                 &.selected {
-                    height: 67px;
+                    height: 50px;
                     visibility: visible;
                     opacity: 1;
                     border-top-width: 1px;
+
+                    &:first-child {
+                        border-top-width: 1px;
+                    }
                 }
 
 
                 &:first-child {
-                    border-top: 0;
+                    border-top-width: 0px;
                 }
 
             
                 img {
                     width: 100%;
                     height: auto;
-                    margin: 20px 0;
+                    margin: 10px 0;
                     border: 0;
                 }
 
                 label {
-                    font-size: 22px;
-                    line-height: 67px;
+                    font-size: 12px;
+                    line-height: 50px;
 
                     span:before {
                         margin-right: 20px;
@@ -247,23 +237,136 @@
             ul {
                 li {
                     border-top-width: 1px;
-                    height: 67px;
+                    height: 50px;
                     visibility: visible;
                     opacity: 1;
 
+                    &.selected {
+                        &:first-child {
+                            border-top-width: 0px;
+                        }
+                    }
+
                     &.disabled {
-                        height: 67px;
+                        height: 50px;
                         visibility: visible;
                         opacity: 0.5;
                         border-top-width: 1px;
                     }
 
                     &.img {
-                        height: 225px;
+                        height: auto;
                     }
                 }
             }
         }
+    }
+
+    @media only screen and (min-width: $breakpointTablet) {
+        form {
+            padding: 30px;
+            margin: 10px;
+            font-size: 22px;
+
+             input, textarea, & > span {
+                font-size: 22px;
+            }
+
+            input[type="text"], textarea{
+                height: 70px;
+                margin: 0 auto 23px auto;
+                padding: 0 26px;
+            }
+
+            input[type="submit"]{
+                height: 70px;
+                margin: 23px auto;
+            }
+        }
+
+        &_column {
+            width: 50%;
+            float: left;
+            clear: none;
+
+            &--green {
+                form {
+                    padding-top: 15px;
+                    float: right;
+                    max-width: 513px;
+                    float: right;
+
+                    h3 {
+                        font-size: 80px;
+                        padding: 0px 15px 15px 15px;
+                        left: -105px;
+                    }
+
+                    label {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+
+        &_dropdown {
+            margin-bottom: 23px;
+
+            a {
+                line-height: 68px;
+
+                span {
+                    font-size: 22px;
+                    padding: 0px 28px;
+                    height: 68px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 0px 24px;
+
+                    &.selected {
+                        height: 67px;
+                    }
+
+                    img {
+                        margin: 20px 0;
+                    }
+
+                    label {
+                        font-size: 22px;
+                        line-height: 67px;
+
+                        span:before {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            &--open {
+                ul {
+                    li {
+                        height: 67px;
+
+                        &.disabled {
+                            height: 67px;
+                        }
+
+                        &.img {
+                            height: 225px;
+                        }
+                    }
+                }
+            }
+        }
+       
     }
 }
 
